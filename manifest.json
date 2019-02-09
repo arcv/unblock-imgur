@@ -32,6 +32,7 @@
     "webRequest",
     "webRequestBlocking",
     "*://*.imgur.com/*",
+    "*://i.redd.it/*",
     "*://proxy.duckduckgo.com/*"
   ]
 }

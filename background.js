@@ -6,7 +6,7 @@ chrome.webRequest.onBeforeRequest.addListener(function (details) {
     redirectUrl = redirectUrl.replace(/ref=.*&|ref=.*$/, "");
     return {redirectUrl: redirectUrl};
 }, {
-    urls: ["*://*.imgur.com/*"]
+    urls: ["*://*.imgur.com/*", "*://i.redd.it/*"]
 }, ["blocking"]);
 
 chrome.webRequest.onHeadersReceived.addListener(function (details) {
